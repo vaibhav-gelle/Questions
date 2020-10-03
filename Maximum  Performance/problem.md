@@ -36,8 +36,11 @@ Print `Maximum performance % (10^9 + 7)` of a team composed of atmost `k` engine
 
 ##### Sample Input 1
 6
+
 2 10 3 1 5 8
+
 5 4 3 9 7 2
+
 2
 
 ###### Sample Output 1
@@ -47,8 +50,11 @@ We have the maximum performance of the team by selecting engineer 2 (with speed=
 
 ##### Sample Input 2
 6
+
 2 10 3 1 5 8
+
 5 4 3 9 7 2
+
 3
 ###### Sample Output 2
 68
