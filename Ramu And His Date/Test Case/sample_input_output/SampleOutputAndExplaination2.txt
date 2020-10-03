@@ -1,0 +1,6 @@
+Output => 1
+
+
+Explaination ->
+
+In the second example regardless of "her choice" Ramu can choose a restaurant with the cost of the dinner 1.

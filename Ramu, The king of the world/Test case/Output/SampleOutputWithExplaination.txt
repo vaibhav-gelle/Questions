@@ -1,0 +1,5 @@
+3
+
+Explanation 
+
+The largest group whose gcd is greater than 1 is {2,4,6} so the output will be 3(size).
