@@ -6,8 +6,11 @@ Calculate/Update performance.
     
 #### Example
 6
+
 2 10 3 1 5 8
+
 5 4 3 9 7 2
+
 3
 
 After sorting persons based on descending order of efficeny, we get
