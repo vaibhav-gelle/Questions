@@ -19,6 +19,7 @@ Notice that you will delete the chosen characters at the same time, in other wor
 
 ##### Sample Input 1
 abaac
+
 1 2 3 4 5
 ###### Sample Output 1
 3
@@ -28,6 +29,7 @@ Delete the letter "a" with cost 3 to get "abac" (String without two identical le
 
 ##### Sample Input 2
 abc
+
 1 2 3
 ###### Sample Output 2
 0
