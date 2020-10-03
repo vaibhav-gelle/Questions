@@ -6,8 +6,11 @@ Notice that you will delete the chosen characters at the same time, in other wor
 
 #### Constraints
 `s.length == cost.length`
+
 `1 <= s.length, cost.length <= 10^5`
+
 `1 <= cost[i] <= 10^4`
+
 `s contains only lowercase English letters.`
 
 #### Input Format
