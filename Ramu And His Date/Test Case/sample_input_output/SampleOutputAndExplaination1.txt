@@ -1,0 +1,5 @@
+output sample 1 => 2
+
+Explaination -> 
+
+In the first example if Mille chooses the first or the third streets Ramu can choose an avenue with the cost of the dinner 1. So she chooses the second street and Ramu chooses any avenue. The cost of the dinner is 2.
