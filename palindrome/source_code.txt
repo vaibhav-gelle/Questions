@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+#define ll long long
+using namespace std;
+
+int main() {
+    ios_base::sync_with_stdio(NULL);
+    cin.tie(NULL);
+	// your code goes here
+	ll t;
+	cin>>t;
+	while(t--)
+	{
+	    ll n,x=1;
+	    char c='a';
+	    cin>>n;
+	    while(n>0)
+	    {
+	        if(n-x>=0)
+	        {
+	            cout<<c;
+	            n-=x;
+	        }
+	        else if(n>0&&n<x)
+	        c++,x=0;
+	        x++;
+	    }
+	    cout<<endl;
+	}
+	return 0;
+}
