@@ -1,0 +1,15 @@
+We first observe that it's never beneficial to move back to a lower-indexed city — we'll only move forwards through the NN cities in order.
+Let F_i be the minimum cost required to be at city i with a full tank of gas, and G_i be the minimum cost required to arrive at city i at all
+(with each equal to infinity if unachievable). Our answer will be G_N.We know that F_1 = G_1 = 0. For each i > 1, G_i is equal to the minimum value
+of F_j across all cities j such that it's possible to drive directly from j to i on a single tank of gas (in other words, such that max(i−M,1)≤j<i).
+F_i is then simply equal to G_i + C_i if C_i≠0, or is equal to infinity∞ otherwise.Since each G and F value only depends on previous ones, this suggests
+an approach involving iterating over the cities in order from 1 to N and simply computing their GG and FF values along the way. However, a direct implementation
+of the above would be too inefficient, involving considering up to M prior F values in order to compute each G value and yielding a time complexity of O(N*M).
+We can improve on this through observations around which F values may be relevant when computing subsequent G values. If there exists a pair of cities i and j
+such that i<j and F_i ≥Fj, then we can disregard F_i going forward, as F_j will always be at least as beneficial.This suggests that we can maintain an ordered list L
+of cities which may ever be relevant, which have both increasing indices and increasing F values. As we iterate over the N cities, we should remove the earliest cities
+from L once they become too far back to still be used for the current city's G value, we should append new cities onto the end of L when we compute their F values, and 
+right before appending each such city, we should remove cities from L which will never be relevant anymore (due to having an FF value larger than or equal to the new city).
+We can then compute each current city's G value in just O(1) time (by using the F value of the earliest city in L, which must be the minimum one). Given the operations involved,
+representing L as a deque is most convenient.Every city will be added to and removed from LL at most once, and we'll perform only a constant number
+of other operations while computing each city's F and G values. Therefore, the time complexity of this solution is O(N).
